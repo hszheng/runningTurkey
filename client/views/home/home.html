@@ -1,0 +1,132 @@
+<template name="home">
+    <div class="page-viewport">
+        <!-- 游戏首页 -->
+        <!-- loading -->
+        <div class="loading">
+            <div class="loadingstyle">
+                <img src="./page1/loading.png"/>
+                <span class="progress">0%</span>
+                <span class="text">loading...</span>
+            </div>    
+        </div>        
+        <div class="page page1">
+            <div class="page-bg"></div>
+           <img src="/page1/rankingboard.png"  class="img1"> 
+           <img src="/page1/gamerule.png" class="img2">
+           <div class="cannon-containner">
+                <img src="/page1/cannon.png" class="img4">
+                <img src="/page1/trigerfire.png" class="img5">
+                <img src="/page1/spark.png" class="img6">
+                <img src="/page1/ball.png" class="img7">
+                <img src="/page1/runningturkey.png" class="img8">
+                <img src="/page1/tears.png" class="img9">
+                <div class="turkey-containner">
+                    <img src="/page1/turkey.png" class="page10">
+                    <div class="eyecontainner">
+                        <img src="/page1/lefteye.png" class="page11">
+                        <img src="/page1/righteye.png" class="page12">
+                    </div>
+                    <img src="/page1/rightfoot.png" class="page13">
+                </div>
+                
+           </div>
+           <img src="/page1/startgame.png" class="img3">
+        </div>
+        <!-- 游戏内 -->
+        <div class="page page2">
+            <audio src="/music/bgmusic.mp3" class="bgmusic" autoplay = "autoplay" loop = "loop"></audio>
+            <audio src="/music/shell.wav" class="shellmusic" ></audio>
+            <audio src="/music/timer.wav" class="timermusic"></audio>
+            <audio src="/music/hitted.wav" class="hittermusic"></audio>
+            <img class="time-no time-1" src="/page2/1.png" style="display:none;">
+            <img class="time-no time-2" src="/page2/2.png" style="display:none;">
+            <img class="time-no time-3" src="/page2/3.png" style="display:none;">
+    		<img class="page2-bg" src="/page2/page2bg1.png"/>
+    		<img class="img2" src="/page2/page2bg2.png" style="max-height:696px;">
+    				
+            <div class="timing">
+                <div class="time-containner"><span>时间：</span><span id="gettime">60</span><span>秒</span></div>
+                <div class="score-containner"><span>得分：</span><span id="getscore">{{score}}</span><span>分</span></div>
+            </div>
+            <div class="fire-containner">
+                <img src="/page2/upingfire.png">
+            </div>
+        	<div class="wheel-containner">
+        		<img src="/page2/upingfire.png" class="img5">
+        		<img src="/page2/wheel.png" class="img6">
+        		<img src="/page2/burningfire.png" class="img7">
+        	</div>                	
+            <div class="img8 turkey1">
+                <img src="/page2/t1.png" class="t1" style="display: block;">
+                <img src="/page2/t2.png" class="t2">
+                <img src="/page2/t3.png" class="t3">
+                <img src="/page2/t4.png" class="t4">
+                <img src="/page2/t5.png" class="t5">
+                <img src="/page2/t6.png" class="t6">                
+            </div>
+            <div class="img8 turkey2">
+                <img src="/page2/t1.png" class="t1" style="display: block;">
+                <img src="/page2/t2.png" class="t2">
+                <img src="/page2/t3.png" class="t3">
+                <img src="/page2/t4.png" class="t4">
+                <img src="/page2/t5.png" class="t5">
+                <img src="/page2/t6.png" class="t6">
+            </div>
+            <div class="img8 turkey3">
+                <img src="/page2/t1.png" class="t1" style="display: block;">
+                <img src="/page2/t2.png" class="t2">
+                <img src="/page2/t3.png" class="t3">
+                <img src="/page2/t4.png" class="t4">
+                <img src="/page2/t5.png" class="t5">
+                <img src="/page2/t6.png" class="t6">
+            </div>
+
+            <img src="/page2/roastturkey.png" class="img9">
+            <img src="/page2/roastturkey.png" class="img10">
+            <img src="/page2/roastturkey.png" class="img11">
+        </div>
+        <!-- 得分榜 -->
+        <!-- style="display:block;" -->
+        <div class="page page3">
+            <div class="page-bg"></div>
+            <img src="/page3/standdingturkey.png" class="img1">
+            <div class="dialog">
+                <div class="yourscore">你的得分</div>
+                <div class="totalscore"><span>{{score}}</span><span>分</span></div>                
+            </div>
+            
+            <img src="/page3/gameagain.png" class="img3">
+            <img src="/page3/leaderboard.png" class="img4">
+            <img src="/page3/share.png" class="img5">
+        </div>
+        <!-- 游戏规则 -->
+        <div class="page page4">
+            <div class="page-bg"></div>
+            <img src="/page4/gamerule.png" class="img1">
+        </div>
+        <!-- 排行榜 -->
+        <div class="page page5">
+             <div class="page-bg"></div>
+             <div class="leaderboard">
+                <table class="table table-condensed">
+                    {{#each leaderstatics}} 
+                    <tr>
+                        <td>{{num}}</td><td>{{nickname}}</td><td>{{scores}}</td>
+                    </tr>                                                           
+                    {{/each}}    
+                </table>
+             </div>
+        </div>
+
+        <!-- 分享游戏 -->
+        <div class="page page6" >
+            <div class="page-bg"></div>
+            <div class="sharing">
+                <img src="/page6/tips.png" class="img1">
+                <img src="/page6/clickttoshare.png" class="img2">
+            </div>
+        </div>
+    </div>
+    <!-- .page-viewport end -->
+    {{> orientlayer}}
+</template>

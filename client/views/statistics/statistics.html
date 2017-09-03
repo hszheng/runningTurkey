@@ -1,0 +1,20 @@
+<template name="statistics">
+    <form id="login">
+        <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="用户名">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="pwd" placeholder="密码">
+        </div>
+        <button type="submit" class="btn btn-default">登录</button>
+    </form>
+    <table id="info" style="display: none;">
+        <thead>
+            <tr>
+                <th>点击量：{{click}}</th>
+                <th>分享量：{{share}}</th>
+                <th>游戏次数：{{game}}</th>
+            </tr>
+        </thead>
+    </table>
+</template>

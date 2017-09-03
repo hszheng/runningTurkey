@@ -1,0 +1,665 @@
+/*loading*/
+.loadingstyle{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 142px;
+    margin: auto;
+    top: 348px;
+}
+.loading {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #F60;
+    background-color: #000;
+    font-size: 12px;
+    line-height: 30px;
+    z-index: 999;
+    display: block;
+}
+
+.loading img {
+    position: absolute;
+    left: 123px;
+    top: 103px;
+    width: 70px;
+    -webkit-animation: loadingRotate ease 2s both infinite;
+    animation: loadingRotate ease 2s both infinite;
+}
+
+.loading .progress {
+    position: absolute;
+    left: 131px;
+    top: 123px;
+    width: 55px;
+}
+
+.loading .text {
+    position: absolute;
+    left: 130px;
+    top: 180px;
+}
+
+/*page1*/
+
+.page1 .page-bg {
+    background-image: url(/page1/gamebg.png);
+}
+
+.page1 .img1 {
+    position: absolute;
+}
+
+.page1 .img2 {
+    position: absolute;
+    right: 0;
+}
+
+.page1 .img3 {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 59px;
+    z-index: 200;
+}
+
+.page1 .cannon-containner {
+    position: relative;
+    top: 500px;
+    left: 0;
+}
+
+.page1 .cannon-containner .img4 {
+    position: absolute;
+    z-index: 99;
+    left: 0px;
+    top: -85px;
+}
+
+.page1 .cannon-containner .img5 {
+    position: absolute;
+    z-index: 89;
+    left: -3px;
+    top: -101px;
+    animation: trigerfire 0.5s infinite;
+    -webkit-animation: trigerfire 0.5s infinite;
+}
+
+@keyframes trigerfire {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes trigerfire {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.page1 .cannon-containner .img6 {
+    position: absolute;
+    z-index: 99;
+    left: 119px;
+    top: -107px;
+    animation: trigerfire 0.5s infinite;
+    -webkit-animation: trigerfire 0.5s infinite;
+}
+
+.page1 .cannon-containner .img7 {
+    position: absolute;
+    z-index: 99;
+    left: 132px;
+    top: -97px;
+    animation: ball 1s infinite;
+    -webkit-animation: ball 1s infinite;
+}
+
+@keyframes ball {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@-webkit-keyframes ball {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+.page1 .cannon-containner .img8 {
+    position: absolute;
+    right: 8px;
+    top: -49px;
+}
+
+.page1 .cannon-containner .img9 {
+    position: absolute;
+    right: 0;
+    top: -61px;
+    animation: ball 0.5s infinite;
+    -webkit-animation: ball 0.5s infinite;
+    animation-timing: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+.turkey-containner {
+    position: relative;
+    /*top: 61px;*/
+    top: -49px;
+    margin: 0 auto;
+    /*left: 100px;*/
+    width: 417px;
+}
+
+.page1 .turkey-containner .page10 {
+    position: absolute;
+    z-index: 99;
+}
+
+.page1 .turkey-containner .page11 {
+    position: absolute;
+    z-index: 99;
+    top: 144px;
+    left: 171px;
+}
+
+.page1 .turkey-containner .page12 {
+    position: absolute;
+    top: 143px;
+    left: 239px;
+    z-index: 99;
+}
+
+.page1 .eyecontainner {
+    position: relative;
+    top: 1px;
+    z-index: 105;
+    animation: blinkingeye 1s infinite;
+    -webkit-animation: blinkingeye 1s infinite;
+}
+
+@keyframes blinkingeye {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blinkingeye {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.page1 .turkey-containner .page13 {
+    position: absolute;
+    top: 312px;
+    left: 218px;
+    z-index: 78;
+    animation: rightfoot 1s infinite;
+    -webkit-animation: rightfoot 1s infinite;
+}
+
+@keyframes rightfoot {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(25deg);
+    }
+}
+
+@-webkit-keyframes rightfoot {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(25deg);
+    }
+}
+
+
+/*page2*/
+.page2 .time-no{
+  position: absolute;
+  z-index: 230;
+  top: 0;
+  bottom: 350px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.page2 .page2-bg {
+    position: fixed;
+    width: 100%
+}
+.page2 .timing{
+        position: absolute;
+  z-index: 150;
+  bottom: 580px;
+  left: 50%;
+  font-size: 36px;
+  color: #a40000;
+  margin-left: -83px;
+}
+.page2 .img2 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.page2 .fire-containner {
+    position: absolute;
+    bottom: 180px;
+    left: 45px;
+}
+
+.page2 .fire-containner img{
+    position: absolute;
+    z-index: 200;
+    bottom: -19px;
+    left: 43px;
+    display: none;
+}
+
+.page2 .wheel-containner {
+    position: absolute;
+    bottom: 180px;
+    left: 180px;
+}
+
+.page2 .img3 {
+    position: absolute;
+    bottom: 480px;
+    left: 180px;
+}
+
+.page2 .img5 {
+    position: absolute;
+    z-index: 200;
+    bottom: -19px;
+    left: 43px;
+}
+
+.blinkingfire {
+    animation: blinkingfire 1s infinite;
+    -webkit-animation: blinkingfire 1s infinite;
+}
+
+.flyingfire {
+    animation: flyingfire 0.5s 1 forwards;
+    -webkit-animation: flyingfire 0.5s 1 forwards;
+    -moz-animation: flyingfire 0.5s 1 forwards;
+
+}
+
+@keyframes blinkingfire {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@-webkit-keyframes blinkingfire {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+@-moz-keyframes blinkingfire {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes flyingfire {
+    0% {
+        ransform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-139px);
+    }
+}
+
+@-webkit-keyframes flyingfire {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-139px);
+    }
+}
+
+@-moz-keyframes flyingfire {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-139px);
+    }
+}
+.page2 .img6 {
+    position: absolute;
+    z-index: 99;
+}
+
+.page2 .img7 {
+    position: absolute;
+    top: 64px;
+    left: 19px;
+    z-index: 99;
+    animation: burnningfire 0.5s infinite;
+    -webkit-animation: burnningfire 0.5s infinite;
+}
+
+@keyframes burnningfire {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@-webkit-keyframes burnningfire {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+.page2 .img8 {
+    position: absolute;
+    bottom: 310px;
+    right: -189px;
+    z-index: 123;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 189px;
+    height: 144px;
+}
+.page2 .img8 img {
+    display: none;
+}
+
+.page2 .turkey1 {
+    bottom: 470px;
+}
+
+.page2 .turkey2 {
+    bottom: 390px;
+}
+
+.page2 .img9 {
+    position: absolute;
+    bottom: 470px;
+    left: 180px;
+    display: none;
+}
+
+.page2 .img10 {
+    position: absolute;
+    bottom: 390px;
+    left: 180px;
+    display: none;
+}
+
+.page2 .img11 {
+    position: absolute;
+    bottom: 310px;
+    left: 180px;
+    display: none;
+}
+
+@keyframes runningturkey {
+    0% {
+        background-image: url(/page2/runningturkey.png);
+    }
+    100% {
+        background-image: url(/page2/cryturkey.png);
+    }
+}
+
+@-webkit-keyframes runningturkey {
+    0% {
+        background-image: url(/page2/runningturkey.png);
+        -webkit-transform: translateX(0px);
+    }
+    10% {
+        background-image: url(/page2/cryturkey.png);
+        -webkit-transform: translateX(-64px);
+    }
+    20% {
+        background-image: url(/page2/runningturkey.png);
+        -webkit-transform: translateX(-128px);
+    }
+    30% {
+        background-image: url(/page2/cryturkey.png);
+        -webkit-transform: translateX(-192px);
+    }
+    40% {
+        background-image: url(/page2/runningturkey.png);
+        -webkit-transform: translateX(-256px);
+    }
+    50% {
+        background-image: url(/page2/cryturkey.png);
+        -webkit-transform: translateX(-320px);
+    }
+    60% {
+        background-image: url(/page2/runningturkey.png);
+        -webkit-transform: translateX(-384px);
+    }
+    70% {
+        background-image: url(/page2/cryturkey.png);
+        -webkit-transform: translateX(-448px);
+    }
+    80% {
+        -webkit-transform: translateX(-512px);
+        background-image: url(/page2/runningturkey.png);
+    }
+    90% {
+        background-image: url(/page2/cryturkey.png);
+        -webkit-transform: translateX(-576px);
+    }
+    100% {
+        -webkit-transform: translateX(-640px);
+        background-image: url(/page2/runningturkey.png);
+    }
+}
+
+.page2 .time-containner{
+    height: 36px;
+}
+.page2 .score-containner{
+    height: 36px;
+    margin-top: 11px;
+}
+/*page3*/
+.page6 .page-bg,
+.page5 .page-bg,
+.page4 .page-bg,
+.page3 .page-bg{
+    position: fixed;
+    background-color: black;
+    z-index: 200;
+    opacity: 0.8;
+    width: 100%;  
+}
+
+.page6,
+.page5,
+.page4,
+.page3 {
+      width: 640px;
+  left: 50%;
+  margin-left: -320px;
+}
+.page3 .img1{
+    position: absolute;
+    z-index: 202;
+    bottom: 357px;
+    left: 30px;
+}
+.page3 .dialog{
+    width: 307px;
+    height: 204px;
+    background-image: url(/page3/dialog.png);
+    position: absolute;
+    z-index: 202;
+    bottom: 660px;
+    left: 260px;  
+    background-repeat: no-repeat; 
+    color:#e60012;
+    font-size: 36px;
+      font-weight: bolder;
+}
+.page3 .yourscore{
+    position: absolute;
+    top: 49px;
+    left: 80px;
+    letter-spacing: 5px;
+}
+.page3 .totalscore{
+    position: absolute;
+    top: 100px;
+    left: 112px;
+    letter-spacing: 2px;
+}
+.page3 .img2{
+    position: absolute;
+    z-index: 202;
+    bottom: 660px;
+    left: 260px;
+}
+.page3 .img3{
+    position: absolute;
+    z-index: 201;
+    bottom: 235px;
+    left: 185px;
+}
+.page3 .img4{
+    position: absolute;
+    z-index: 201;
+    bottom: 110px;
+    left: 30px;
+}
+
+.page3 .img5{
+    position: absolute;
+    z-index: 202;
+    bottom: 110px;
+    left: 340px;
+}
+
+/*page4*/
+.page4 .img1{
+    position: absolute;
+    z-index: 200;
+}
+
+.page5 .img1{
+    position: absolute;
+    z-index: 200;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+.page5 .leaderboard{
+  width: 100%;
+  height: 100%;
+  background-image: url(/page5/leaderboard.png);
+  position: absolute;
+  z-index: 200;
+  left: 18px;
+  background-repeat: no-repeat;
+  top: 110px;
+}
+.page5 table{
+    position: absolute;
+    z-index: 220;
+    width: 537px;
+    /* height: 555px; */
+    top: 152px;
+    left: 26px;
+    text-align: center;
+    color: #FFF;
+    line-height: 38px;
+    overflow:hidden;
+}
+
+.page5 table tr td:nth-child(1){
+    width: 22%;
+}
+.page5 table tr td:nth-child(2){
+    width: 46%;
+}
+.page5 table tr td:nth-child(3){
+    width: 30%;
+}
+.page5 table tr td{
+    border-top:1px solid #D41F34 !important;
+}
+
+.page6 .img1{
+    position: absolute;
+    z-index: 203;
+    bottom: 700px;
+}
+.page6 .img2{
+    position: absolute;
+    z-index: 202;
+    bottom: 500px;
+    left: 200px;
+}
