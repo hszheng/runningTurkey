@@ -11,5 +11,10 @@ H5小游戏开发周期短，广告开发商一般会使用它在节日期�
     git clone https://github.com/hszheng/runningTurkey.git
 ## 安装node环境
     curl https://install.meteor.com/ | sh
+## 初始化项目
+    meteor npm install
+## 启动
+    meteor --port 3006
+> 以chrome为例，打开控制台并切换到手机模拟观看效果如下。
 
-
+<img src="public/preview.png" width="187.5" height="338.5">
