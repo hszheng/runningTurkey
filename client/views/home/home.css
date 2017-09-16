@@ -36,6 +36,7 @@
     left: 131px;
     top: 123px;
     width: 55px;
+    background: transparent;
 }
 
 .loading .text {

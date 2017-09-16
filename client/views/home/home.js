@@ -34,7 +34,7 @@ Template.home.onCreated(function() {
 
     // 微信授权
     var code = parse('code');
-    if (code) {
+    if (!code) {
         Meteor.call('getUserInfoByCode', code, function(err, result) {
             if (!err && result) {
                 //alert(result.nickname);
