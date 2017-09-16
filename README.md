@@ -17,3 +17,5 @@
     meteor --port 3006
 > 手机浏览器或PC浏览器模拟器查看效果
 <img src="public/preview.png" width="187.5" height="338.5">
+<img src="public/game.png" width="187.5" height="338.5">
+
