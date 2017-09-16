@@ -52,7 +52,7 @@ window.PAGE_WIDTH = 640;
  *
  * @author Vincent Zheng
  */
-window.PAGE_HEIGHT = 1000;
+window.PAGE_HEIGHT = 1136;
 
 /**
  * 当前网站的host
